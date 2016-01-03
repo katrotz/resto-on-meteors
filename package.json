@@ -1,0 +1,37 @@
+{
+  "name": "resto-on-meteors",
+  "version": "0.0.1-semantic-released",
+  "description": "Restaurants overview website based on meteorJS",
+  "main": "README.md",
+  "scripts": {
+    "start": "meteor run --settings settings.json",
+    "test": "PHANTOMJS_BIN=/usr/local/bin/phantomjs JASMINE_BROWSER=PhantomJS JASMINE_SERVER_UNIT=1 JASMINE_SERVER_INTEGRATION=0 JASMINE_CLIENT_UNIT=0 JASMINE_CLIENT_INTEGRATION=0 VELOCITY_DEBUG=1 velocity test-app --once --ci --settings settings.json",
+    "test:ci": "JASMINE_BROWSER=Firefox JASMINE_SERVER_UNIT=1 JASMINE_SERVER_INTEGRATION=0 JASMINE_CLIENT_UNIT=0 JASMINE_CLIENT_INTEGRATION=0 VELOCITY_DEBUG=0 velocity test-app --once --ci --settings settings.json",
+    "commit": "git-cz",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katrotz/resto-on-meteors.git"
+  },
+  "keywords": [
+    "resto",
+    "restaurants"
+  ],
+  "author": "Veaceslav Cotruta <katrotz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katrotz/resto-on-meteors/issues"
+  },
+  "homepage": "https://github.com/katrotz/resto-on-meteors#readme",
+  "devDependencies": {
+    "commitizen": "^2.4.6",
+    "csvtojson": "^0.5.0",
+    "cz-conventional-changelog": "^1.1.5",
+    "promise": "^7.1.1",
+    "semantic-release": "^4.3.5"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  }
+}

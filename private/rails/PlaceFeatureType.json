@@ -1,0 +1,26 @@
+[
+  {
+    id: 1,
+    slug: "cuisine"
+  },
+  {
+    id: 2,
+    slug: "place-type"
+  },
+  {
+    id: 3,
+    slug: "options"
+  },
+  {
+    id: 4,
+    slug: "special-menu"
+  },
+  {
+    id: 5,
+    slug: "payment"
+  },
+  {
+    id: 6,
+    slug: "entertainment"
+  }
+]
